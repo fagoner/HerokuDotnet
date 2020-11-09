@@ -28,7 +28,6 @@ heroku container:push -a YourAppName web
 
 ```
 heroku container:release -a YourAppName web
-
 ```
 
 #### Step 5 - Take a look
@@ -37,6 +36,7 @@ Navigate to https://your-app-name.herokuapp.com
 
 #### Step 6 - Problem
 For problems on heroku, replace the last line for the `Dockerfile`
+
 `CMD ASPNETCORE_URLS=http://*:$PORT dotnet HerokuApp.dll`
 
 #### Source/Credits
